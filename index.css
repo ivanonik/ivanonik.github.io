@@ -1,0 +1,102 @@
+body{
+	font-family: Avenir;
+	margin: 0;
+}
+
+
+----{
+	color:  #A3ACB0;
+	display: inline-block;
+	text-align: left;
+	margin: 0px 10px;
+	margin-top: 50px;
+
+}
+
+div p {
+	font-size: 18px;
+}
+
+#head {
+	font-size: 30px;
+	color: black;
+	margin-left: 20px;
+}
+
+div {
+	margin: 20px 0px;
+	position: relative;
+
+}
+
+img {
+
+	min-width: 1%;
+	max-width: 100%; 
+	min-height: 1%;
+	max-height: 100%;
+
+}
+
+img:hover {
+	transition: 0.5s;
+	transform: scale(1.005);
+	opacity: 0.9;
+}
+
+p {
+	margin-left: 20px;
+}
+
+.logo{
+	width: 50px;
+
+	margin-left: 20px;
+}
+
+ #desc{
+	margin-right:15px ;
+}
+
+#top{
+	text-decoration: none;
+	
+	color:#A3ACB0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+@media screen and (max-width: 481px){
+
+header b{
+	font-size: 20px;
+}
+
+img:hover {
+	transition: 0.5s;
+	transform: scale(1.005);
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
