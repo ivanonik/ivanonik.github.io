@@ -35,13 +35,24 @@ img {
 	max-width: 100%; 
 	min-height: 1%;
 	max-height: 100%;
+	transition: 0.3s;
+	transform: scale(1);
 
 }
 
 img:hover {
-	transition: 0.5s;
-	transform: scale(1.005);
-	opacity: 0.9;
+	transition: 0.3s;
+	transform: scale(1.02);
+}
+
+/* Image transition */
+img {
+
+
+}
+
+img:hover {
+
 }
 
 p {
