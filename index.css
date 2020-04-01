@@ -42,18 +42,9 @@ img {
 
 img:hover {
 	transition: 0.3s;
-	transform: scale(1.02);
+	transform: scale(1.01);
 }
 
-/* Image transition */
-img {
-
-
-}
-
-img:hover {
-
-}
 
 p {
 	margin-left: 20px;
