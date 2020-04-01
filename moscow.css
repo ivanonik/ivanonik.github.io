@@ -113,45 +113,43 @@ img:hover {
 	max-height: 750px;
 	font-size: 30px;
 	font: Verdana;
-	text-align: justify;
+	text-align: center;
 	overflow: scroll;
 }
 
 @media screen and (max-width: 500px){
 
-.prev, .next {
+/*.prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: black;
+  bottom: 10%;
+  color: green;
   font-weight: bold;
   font-size: 24px;
   transition: 0.6s ease;
   user-select: none;
-}
+}*/
 
 .prev{
 	width: auto;
-	left: 30px;
-	color: white;
+  left: 100px;
+  top: 100%;
+  margin-top: 6px;
+	color: black;
 	z-index: 1;
 }
 
 .next{
 	width: auto;
-	right: 30px;
-	color: white;
+	right: 100px;
+  top:100%;
+  margin-top: 6px;
+	color: black;
 	z-index: 1;
 
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
 }
