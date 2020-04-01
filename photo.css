@@ -25,7 +25,7 @@ a {
 
 img:hover {
 	transition: 0.2s;
-	transform: scale(1.05);
+	transform: scale(1.01);
 }
 
 img{
@@ -35,6 +35,8 @@ img{
 	max-width: 100%; 
 	min-height: 1%;
 	max-height: 280px;
+	transition: 0.2s;
+	transform: scale(1);
 
 }
 

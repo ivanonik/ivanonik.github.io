@@ -42,7 +42,7 @@ img {
 
 img:hover {
 	transition: 0.2s;
-	transform: scale(1.001);
+	transform: scale(1.005);
 }
 
 
