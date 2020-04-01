@@ -113,7 +113,7 @@ img:hover {
 	max-height: 750px;
 	font-size: 30px;
 	font: Verdana;
-	text-align: center;
+	text-align: justify;
 	overflow: scroll;
 }
 
@@ -150,6 +150,10 @@ img:hover {
 	color: black;
 	z-index: 1;
 
+}
+
+#desc{
+  padding: 0px 20px;
 }
 
 }
