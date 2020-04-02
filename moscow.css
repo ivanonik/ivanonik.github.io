@@ -110,7 +110,7 @@ img:hover {
 
 #desc{
 	max-width: 500px;
-	max-height: 760px;
+	max-height: 750px;
 	font-size: 30px;
 	font: Verdana;
 	text-align: justify;
@@ -154,6 +154,7 @@ img:hover {
 
 #desc{
   padding: 0px 20px;
+  overflow: auto;
 }
 
 }
