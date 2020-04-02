@@ -114,7 +114,7 @@ img:hover {
 	font-size: 30px;
 	font: Verdana;
 	text-align: justify;
-	overflow: scroll;
+  overflow: auto;
 }
 
 @media screen and (max-width: 500px){
