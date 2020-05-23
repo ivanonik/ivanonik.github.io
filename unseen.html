@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>/unseen</title>
+	<link rel="stylesheet" type="text/css" href="unseen.css">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<header class="center">
+	<p>/unseen</p>
+  <a href="https://ivanonik.github.io/" style="text-decoration: none; color: black;"> <p id="main">main</p> </a>
+</header>
+
+
+ 
+<div class="slideshow-container">
+
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<!--- Motivation -->
+
+<!-- Order -->
+
+<div class="mySlides fade">
+  <img src="./jpg/main.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="./jpg/main1.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  <img src="./jpg/2.jpg" style="width:100%">
+  <div class="text">2/13</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="./jpg/3.jpg" style="width:100%">
+  <div class="text">3/13</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="./jpg/4.jpg" style="width:100%">
+  <div class="text">4/13</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="./jpg/5.jpg" style="width:100%">
+  <div class="text">5/13</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="./jpg/6.jpg" style="width:100%">
+  <div class="text">6/13</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="./jpg/7.jpg" style="width:100%">
+  <div class="text">7/13</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="./jpg/8.jpg" style="width:100%">
+  <div class="text">8/13</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="./jpg/9.jpg" style="width:100%">
+  <div class="text">9/13</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="./jpg/10.jpg" style="width:100%">
+  <div class="text">10/13</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="./jpg/11.jpg" style="width:100%">
+  <div class="text">11/13</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="./jpg/1.jpg" style="width:100%">
+  <div class="text">12/13</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="./jpg/13.jpg" style="width:100%">
+  <div class="text">13/13</div>
+</div>
+
+
+
+</div>
+
+
+<br>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+</body>
+</html> 
