@@ -1,110 +1,71 @@
 body{
-	font-family: Avenir;
+	font-family: Arial;
 	margin: 0;
 }
 
+header {
+	text-align: center;
+}
 header p{
 	display: inline-block;
-	text-align: left;
+	text-align: center;
 	font-size: 30px;
-	margin-left: 20px; 
+  	margin: 30px 10px 75px 10px;
+
 }
 
 #main {
 	font-size: 20px;
-
+	color:black;
 }
-div{
 
-}
 
 a {
 	text-decoration: none;
 	color: black;
+	margin:0;
 }
 
 img:hover {
 	transition: 0.2s;
-	transform: scale(1.01);
+	transform: scale(0.980);
 }
 
 img{
-	margin: 20px;
+	margin-left: 0;
+	margin-right:0;
 	opacity: 0.9;
 	min-width: 1%;
 	max-width: 100%; 
 	min-height: 1%;
-	max-height: 280px;
+	max-height: 500px;
 	transition: 0.2s;
 	transform: scale(1);
 
 }
 
-
-
-
-/* 6/7/8*/@media screen and (max-width: 415px){
-
-header p{
-	font-size: 20px;
-	margin: 10px;
+#container {
+	display: flex;
+	justify-content: space-between;
+	vertical-align: middle;
+	margin-left: 0;
+	margin-right:0;
 }
+
+
+
+
+/* 6/7/8*/@media screen and (max-width: 481px){
+
+
 
 img{
 	margin: 0;
-	max-width: 300px;
+	max-width: 100%;
+	display: block;
 }
 
-#img1{
-	display: none;
-}
-}
-/*Iphone X*/@media screen and (max-width: 376px){
-header p{
-	font-size: 20px;
-	margin: 10px;
+#container{
+	width: 100%;
 }
 
-img{
-	margin: 0;
-	max-width: 179.9px;
-}
-
-#img1{
-	display: none;
-}
-}
-
-/*Galaxy S5*/@media screen and (max-width: 361px){
-
-header p{
-	font-size: 20px;
-	margin: 10px;
-}
-
-img{
-	margin: 0;
-	max-width: 169.9px;
-}
-
-#img1{
-	display: none;
-}
-}
-
-/*Iphone 5S/SE*/@media screen and (max-width: 321px){
-
-header p{
-	font-size: 20px;
-	margin: 10px;
-}
-
-img{
-	margin: 0;
-	max-width: 155px;
-}
-
-#img1{
-	display: none;
-}
-}

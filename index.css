@@ -1,33 +1,34 @@
 body{
-	font-family: Avenir;
+	font-family: arial;
 	margin: 0;
 }
 
 
-----{
-	color:  #A3ACB0;
+
+#thumbnail {
+	font-size: 18px;
 	display: inline-block;
-	text-align: left;
-	margin: 0px 10px;
-	margin-top: 50px;
+	max-width: 300px;
+	margin: 0 10px 0 10px; 
 
 }
 
+#container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
 div p {
-	font-size: 18px;
+	text-align: center;
 }
 
 #head {
 	font-size: 30px;
 	color: black;
-	margin-left: 20px;
+	text-align: center;
 }
 
-div {
-	margin: 20px 0px;
-	position: relative;
-
-}
 
 img {
 
@@ -42,27 +43,18 @@ img {
 
 img:hover {
 	transition: 0.2s;
-	transform: scale(1.005);
+	transform: scale(1.007);
 }
 
-
-p {
-	margin-left: 20px;
-}
-
-.logo{
-	width: 50px;
-
-	margin-left: 20px;
-}
-
- #desc{
-	margin-right:15px ;
+#desc{
+ 	font-size: 20px; 
+ 	margin: 20px 10px 0 10px;
+ 	text-align: center;
+	text-justify: inter-word;
 }
 
 #top{
 	text-decoration: none;
-	
 	color:#A3ACB0;
 }
 
@@ -71,28 +63,47 @@ a {
 	color: black;
 }
 
+#contact {
+		width: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a p {
+	text-align:center;
+}
+
+
+
 @media screen and (max-width: 481px){
 
-header b{
-	font-size: 20px;
+
+
+img {
+	margin: 0;
+	width: 100%;
+	transition: 0.2s;
+	transform: scale(1);
 }
 
 img:hover {
-	transition: 0.5s;
+	transition: 0.2s;
 	transform: scale(1.005);
-
 }
 
 
-#main {
-	font-size:20px;
-}
-
-
+#thumbnail{
+	font-size: 18px;
+	background-color: color;
 
 }
 
+#container{
+	text-align: center;
+	margin-top: 50px;
+	display: inline-block;
 
+}
 
 
 

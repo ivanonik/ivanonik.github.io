@@ -1,8 +1,23 @@
 
 * {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0;}
+body {font-family: Arial, sans-serif; margin:0;}
 .mySlides {display: none}
 img {vertical-align: middle;}
+
+header {
+  text-align: center;
+}
+header p{
+  display: inline-block;
+  text-align: center;
+  font-size: 30px;
+  margin: 30px 10px 0 10px;
+}
+
+#main {
+  font-size: 20px;
+
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -89,13 +104,6 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }*/
 
-header p {
-	text-align: center;
-	font-size: 30px;
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-
 /* Image transition */
 img {
 	transition: 0.3s;
@@ -117,9 +125,7 @@ img:hover {
   overflow: auto;
 }
 
-header #main {
-  font-size: 20px;
-}
+
 
 @media screen and (max-width: 500px){
 
