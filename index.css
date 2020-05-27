@@ -16,7 +16,7 @@ body{
 #container {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 div p {
@@ -27,7 +27,7 @@ div p {
 	font-size: 30px;
 	color: black;
 	text-align: center;
-	margin-top: 80px;
+	margin-top: 50px;
 }
 
 
