@@ -34,7 +34,7 @@ a {
 
 img:hover {
 	transition: 0.2s;
-	opacity: 0.8;
+	opacity: 0.9;
 	filter: grayscale(0%);
 }
 
@@ -48,7 +48,7 @@ img{
 	transition: 0.2s;
 	transform: scale(1);
 	float: left;
-	filter: grayscale(100%);
+	filter: grayscale(0%);
 }
 
 #container {
@@ -72,6 +72,14 @@ img{
 img {
 		filter: grayscale(0%);
 }
+}
+
+@media only screen and (max-device-height: 1000px) {
+
+img{
+	filter: grayscale( 0%);
+}
+
 }
 
 
