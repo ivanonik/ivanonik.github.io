@@ -58,6 +58,15 @@ img{
     display: -ms-flexbox;
 }
 
+/*Button*/
+
+#myBtn {
+  text-align: center;
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  font-size: 18px; /* Increase font size */
+}
+
 
 @media only screen and (max-device-width: 481px) {
 
