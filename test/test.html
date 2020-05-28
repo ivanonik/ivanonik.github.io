@@ -1,43 +1,42 @@
 <!DOCTYPE html>
 <html>
-	<head>
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<link rel="stylesheet" type="text/css" href="test.css">
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	</head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 <body>
 
 
-<a href="#" class="pop">
-    <img src="https://cdn.pixabay.com/photo/2018/07/31/22/08/lion-3576045_1280.jpg" style="width: 400px; height: 264px;">
-</a>
-    
-<a href="#" class="pop">
-    <img src="http://upload.wikimedia.org/wikipedia/commons/2/22/Turkish_Van_Cat.jpg" style="width: 400px; height: 264px;">
-</a>
+<img id="myImg" src="./1.jpg" alt="Snow" style="width:100%;max-width:300px">
 
-<a href="#" class="pop">
-    <img src="https://cdn-images-1.medium.com/max/2600/1*694y5GwOWsqflOtu_4Lj-g.png" style="width: 400px; height: 264px;">
-</a>
-
-
-
-<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">              
-      <div class="modal-body">
-      	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <img src="" class="imagepreview" style="width: 100%;" >
-      </div>
-    </div>
-  </div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
 </div>
 
 <script>
-$(function() {
-		$('.pop').on('click', function() {
-			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
-			$('#imagemodal').modal('show');   
-		});		
-});
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
 </script>
+
+</body>
+</html>
