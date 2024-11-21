@@ -1,6 +1,10 @@
 body{
 	font-family: Arial;
 	margin: 0;
+	scroll-behavior: smooth;
+	background-color: black;
+	color:white;
+
 }
 
 header {
@@ -9,10 +13,9 @@ header {
 }
 header p{
 	display: inline-block;
-	text-align: center;
+	text-align: left;
 	font-size: 30px;
 	margin: 0px 15px;
-
 }
 
 #main {
@@ -42,15 +45,23 @@ img{
 	min-width: 1%;
 	max-width: 100%; 
 	min-height: 1%;
-	max-height: 500px;
+	max-height: 600px;
 	transition: 0.2s;
 	float: left;
+	filter: grayscale(100%);
+	transition: all 500ms ease-in-out;
+
+}
+
+img:hover{
+	transition: all 500ms ease-in-out;
+	filter:grayscale(0);
 }
 
 #container {
 	display: flex;
 	justify-content: space-between;
-	margin-left: 0: 
+	margin-left: 0;
 	margin-right: 0;
 }
 
@@ -60,23 +71,40 @@ img{
 
 /*Button*/
 
-#myBtn {
-  text-align: center;
-  color: black; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  font-size: 18px; /* Increase font size */
-  
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 5em;
+
+  }
+
+#top{
+	text-decoration: none;
+	font-size: 18px;
+	margin: 50px;
 }
+
+.contact{
+	width: 50%;
+	padding-left:3em;
+	position: absolute;
+	display: inline-block;
+	align-items: center;
+}
+
 
 
 @media only screen and (max-device-width: 481px) {
 
 #tilt{ 
+	margin-top: 2em;
 	display: block;
+
 } 
 
 img {
-		filter: grayscale(0%);
+		filter: grayscale(100%);
 }
 }
 

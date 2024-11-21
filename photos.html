@@ -14,7 +14,7 @@
 
 <header>
 	<p>photos</p>
-	<a href="index.html"><p id="main">main</p></a>
+	<a href="index.html"><p id="main">home</p></a>
 	<p id="tilt">tilt phone</p>
 </header>
 
@@ -91,32 +91,19 @@
 	<a href="./img/p/58.jpg"><img src="./img/p/58.jpg"></a>
 </div>
 
+<div class="center">
+<p id="top" onclick='window.scrollTo({top: 0, behavior: "smooth"});'>Top</p>
+</div>
 
-<p onclick="topFunction()" id="myBtn" title="Go to top">top</p>
-
-<p style="text-align: center;"> © Nikita Ivanov 2020</p>
+<div class="contact">
+	<a href="https://www.instagram.com/ivano_nik/" target="_blank"><p>Instagram</p></a>
+	<a href="mailto:generalgear@ik.me" target="_blank" ><p>Mail</p></a>
+	<p>© Nikita Ivanov 2024</p>
+</div>
+<!-- <p style="text-align: center;"> © Nikita Ivanov 2024</p> -->
 
 <script >
 	
-	//Get the button:
-mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
 
 </script>
 

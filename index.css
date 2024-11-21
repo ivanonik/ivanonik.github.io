@@ -1,7 +1,12 @@
 body{
-	font-family: arial;
+	font-family: Helvetica, sans-serif;
 	margin: 0;
+	background-color: black;
+	color: white;
+	overflow: hidden;
 }
+
+
 
 
 
@@ -17,21 +22,31 @@ body{
 	display: flex;
 	justify-content: space-between;
 	margin-top: 50px;
+	padding: 2em;
 }
 
 div p {
-	text-align: center;
+	text-align: left;
+}
+
+.indicator{
+	padding-left: 2em;
+	font-size: 24px;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 #head {
-	font-size: 30px;
-	color: black;
+	font-size: 36px;
 	text-align: center;
-	margin-top: 50px;
+	
 }
 
 
-img {
+img, #div1 {
 
 	min-width: 1%;
 	max-width: 100%; 
@@ -39,60 +54,104 @@ img {
 	max-height: 100%;
 	transition: 0.2s;
 	transform: scale(1);
-
 }
 
-img:hover {
-	transition: 0.2s;
+
+
+#div1:hover{
 	transform: scale(1.007);
 }
 
 #desc{
  	font-size: 20px; 
- 	margin: 20px 10px 0 10px;
- 	text-align: center;
-	text-justify: inter-word;
-
+	width: 30%;
+	margin: auto;
+	padding-top: 3em;
+	text-align: left;
 }
 
-#top{
-	text-decoration: none;
-	color:#A3ACB0;
-}
+
 
 a {
 	text-decoration: none;
 	color: black;
+
 }
 
-#contact {
-		width: 50px;
-	margin-left: auto;
-	margin-right: auto;
-}
+
 
 a p {
-	text-align:center;
+	text-align:left;
+	color: white;
+	transition: all 200ms ease-in-out;
+
+}
+
+a p:hover{
+	/* color:rgb(255, 109, 4); */
+	translate: 0.314em;
+	transition: all 200ms ease-in-out;
+}
+
+canvas {
+	display: inline;
+  }
+
+#div1{
+	display: none;
+}
+
+.contact{
+	width: 50%;
+	bottom: 10px;
+	padding-left:3em;
+	position: absolute;
+	display: block;
+}
+
+a.contact:hover{
+	color:red;
+}
+
+#contact span{
+	margin:3em;
+	display: block;
+	color:white;
+	/* border: 3px solid #8AC007; */
+}
+
+span.a{
+	display: block;
+	width: 100px;
+	height: 3em;
+ 
+  }
+
+span.b{
+	position: block;
+	transform: translateY(2em);
+	width: 200px;
+
+}
+
+ul.demo {
+	list-style-type: none;
+	padding-left: 3em;
+
+  }
+
+#fest:hover{
+	color:#6c03ff;
+	
 }
 
 
 
-@media screen and (max-width: 481px){
+@media screen and (max-width: 480px){
 
-
-
-img {
-	margin: 0;
-	width: 100%;
-	transition: 0.2s;
-	transform: scale(1);
+#head{
+	font-size: 24px;
 }
-
-img:hover {
-	transition: 0.2s;
-	transform: scale(1.005);
-}
-
 
 #thumbnail{
 	font-size: 18px;
@@ -104,25 +163,24 @@ img:hover {
 	text-align: center;
 	margin-top: 50px;
 	display: inline-block;
-
 }
 
 #desc{
-	text-align: justify;
+	text-align: left;
 	text-justify: inter-word;
-	margin: 0 20px ;
+	width: auto;
+	padding: 3em 2em 3em 2em;
+	margin: 0 1em ;
 }
 
+#bottom-right{
 
-
-
-
-
-
-
-
-
-
-
-
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	padding-bottom: 3em;
+	margin-left: 4em;
+	
+	}
+}
 
