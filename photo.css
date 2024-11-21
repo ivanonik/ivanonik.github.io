@@ -20,7 +20,7 @@ header p{
 
 #main {
 	font-size: 20px;
-	color:black;
+	color:white;
 }
 
 #tilt{
@@ -91,6 +91,7 @@ img:hover{
 	position: absolute;
 	display: inline-block;
 	align-items: center;
+	color:white;
 }
 
 
