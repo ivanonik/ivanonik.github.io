@@ -1,0 +1,310 @@
+
+
+html, body {
+    height: 100%;
+    overflow-y: hidden;
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+
+
+  .topnav {
+    width: 100%;
+    height: 100px;
+    overflow: auto;
+    animation: timer 3.14s ease-in-out;
+    transition: all 250ms ease-in-out;
+
+}
+  
+  .topnav a {
+    float: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-decoration: none;
+    font-size: 18px;
+    width: 33.33%;
+    text-align: center;
+    /* align-items: center; */
+  }
+  
+  .topnav a:hover {
+    color: #1DB954;
+    animation: animation6 200ms ease-in-out;
+
+  }
+  
+  .topnav a.active {
+    background-color: rgb(4, 170, 109);
+  }
+  
+  .topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .topnav-right {
+    float: right;
+  }
+  
+
+
+
+a{
+    /* text-decoration: none; */
+  color: rgb(255, 255, 255);
+}
+
+.a-dark{
+    color: rgb(255, 255, 255);
+}
+
+
+
+h1{
+    font-size: 144px;
+    position:fixed;
+    text-align: center;
+    left: 50%;
+    top: 40%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color:white;
+}
+
+h2{
+    display: inline-block;
+    font-size:32px;
+}
+
+h2:hover{
+  color: rgb(29, 185, 84);
+}
+
+p:hover{
+  color: rgb(29, 185, 84);
+}
+
+#element1{
+    align-items: center;
+    font-size: 36px;
+    position:fixed;
+    color: #1DB954;
+    text-align: left;
+    left: 22%;
+    top: 35%;
+    width: auto;
+    animation: element1 1s ease-in-out;
+
+}
+
+#element1:hover{
+   color: rgb(29, 185, 84);
+}
+
+
+#element2{
+    font-size: 18px;
+    position:relative;
+    text-align: left;
+    left: 21%;
+    top: 55%;
+    width: auto;
+    animation: element2 1s ease-in-out;
+
+}
+
+#timer{
+    font-size: 18px;
+    position:fixed;
+    text-align: right;
+    right: 21%;
+    top: 55%;
+    width: auto;
+    animation: timer 2000ms ease-in-out;
+    color: white;
+}
+
+#timer:hover{
+   color: #1DB954;
+}
+
+.container{
+    position: sticky;
+    text-align: center;
+    width: 50%;
+}
+#program{
+    display: inline-block;
+    margin: 0;
+}
+
+#container2{
+    margin: 0;
+    display: flex;
+    top:100%;
+    /* This centers our sketch horizontally. */
+    justify-content: center;
+    /* This centers our sketch vertically. */
+    align-items: center;
+    z-index:2;
+}
+
+button {
+    font-size: 20px;
+    border: none;
+    padding: 20px;
+    width: 100%;
+    border-color:white;
+    border-style: solid;
+
+  }
+
+/* ANIMATION 1 */
+@keyframes element1 {
+    from {left: -30%;}
+    to {left: 22%;}
+  }
+
+/* ANIMATION 2 */
+@keyframes element2 {
+    from {left: 110%;}
+    to {left: 21%;}
+  }
+
+/* ANIMATION 3 */
+ @keyframes timer {
+    from{opacity: 0;}
+    to{opacity: 1;}
+ } 
+
+ /* ANIMATION 4 */
+
+ @keyframes element3 {
+    from{bottom: -20%;}
+    to{bottom:5em;}
+ }
+
+ @keyframes element4 {
+    from{top:-20%;}
+    to{top:0%}
+ }
+
+ @keyframes animation6 {
+    from{color:#000000}
+    to{color:#1DB954}
+ }
+
+
+#list{
+  text-align: center;
+  position:fixed;
+  overflow: scroll;
+  font-size: 32px;
+  left:50%;
+  top:110%;
+  width: 30%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+
+ /* SCREEN */
+ @media only screen and (min-width: 1200px) {
+    h1 {font-size: 144px;   transition: all 250ms ease-in-out;}
+    #timer{transition: all 250ms ease-in-out;   left:50%;}
+    h2 {transition: all 250ms ease-in-out; }
+
+}
+
+/* PHONE */
+@media only screen and (max-width: 1200px) {
+
+    body {
+      overflow-x: scroll;
+      overflow-y: scroll;
+
+    }
+    h1 {font-size: 32px; transition: all 250ms ease-in-out;}
+    h2 {
+        font-size: 32px; 
+        /* padding-left: 0.2%;
+        padding-right: 0.2%; */
+        margin: auto;
+        transition: all 250ms ease-in-out; 
+    }
+    
+    #element1{
+        opacity: 0; 
+        transition: all 200ms ease-in-out;
+    }
+
+
+    #timer{
+        text-align: center; 
+        left:50%;
+        top:50%;
+        transform: translate(-50%,50%); 
+        /* background-color: aqua;  */
+        transition: all 250ms ease-in-out;
+     }
+
+     .topnav {
+        width: 100%;
+        height: 50px;
+        overflow: visible;
+
+
+        animation: timer 3.14s ease-in-out;
+        color:white;
+        transition: all 250ms ease-in-out;
+
+    }
+    a{
+      text-decoration: none;
+      font-size: 18px;
+      width:33.33%;
+    }
+
+     .navbar a {
+        padding-left:1em;
+        float: none;
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        text-align: left; 
+        height: 1em;
+        /* If you want the text to be left-aligned on small screens */
+      }
+
+    #list{
+      font-size: 8px;
+      text-align: center;
+      overflow: visible;
+      transition: all 250ms ease-in-out; 
+    }
+
+    #list a {
+      font-size: small;
+    }
+
+
+
+    
+
+}
+
+
+
+
