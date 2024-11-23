@@ -26,8 +26,8 @@ function setup() {
 
     push();
 
-      stroke(204, 85, 0);
-      // translate(width/2, height/2);
+      stroke(0, 100, 0);
+      // translate(150, 250);
       
       rotate(radians( frameCount * 0.008) );
       for(let i = 0; i < width; i += offset){
